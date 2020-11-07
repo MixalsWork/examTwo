@@ -1,0 +1,127 @@
+.news 
+    background-color: #20A8CA
+    &__bg
+        padding: 100px 120px 
+        background: url('../img/news/news-bg.png')
+        background-repeat: no-repeat
+        background-size: cover
+        
+    &__container 
+        max-width: 1289px
+        margin: auto
+    &__title 
+        padding-bottom: 100px
+    &__title-line 
+        height: 2px
+        background-color: #FFFFFF
+        width: 100px
+        margin: auto
+        margin-bottom: 40px
+    &__title-text 
+        font-size: 44px
+        text-transform: uppercase
+        color: #FFFFFF
+        text-align: center
+        font-family: Gotham-medium
+    &__slider 
+
+    &__slide 
+        background-color: #fff
+        display: flex
+        flex-direction: column
+        width: max-content
+        margin: 30px
+    &__slide-img 
+        background-position: center
+        background-repeat: no-repeat
+        min-height: 241px
+        &--first
+            background-image: url('../img/news/news-1.png')
+        &--second
+            background-image: url('../img/news/news-2.png')
+        &--third
+            background-image: url('../img/news/news-3.png')
+                
+    &__slide-text
+        padding: 20px 30px 30px 30px
+    &__slide-title 
+        font-size: 22px
+        color: #2C4058
+        text-transform: uppercase
+        max-width: 290px
+        padding-bottom: 20px
+        font-family: Gotham-bold
+    &__slide-descr 
+        font-size: 18px
+        color: #4B5562
+        max-width: 320px
+        padding-bottom: 35px
+        font-family: 'Open Sans'
+    &__slide-author 
+        display: flex
+        align-items: center
+        font-family: Gotham-Book
+    &__slide-author-img
+        padding-right: 20px
+    &__slide-author-img img
+        border-radius: 50%   
+    &__slide-autor-title 
+        font-size: 18px
+        color: #2C4058
+        text-transform: uppercase
+        padding-bottom: 13px
+    &__slide-author-date 
+        font-size: 14px
+        color: #55B7FF
+    &__slider .slick-dots
+        display: flex    
+        justify-content: center
+        flex-wrap: wrap
+    &__slider .slick-dots li
+        padding-right: 30px
+        &:last-child
+            padding-right: 0
+    &__slider .slick-dots .slick-active button
+        background-color: white
+    &__slider .slick-dots button
+        font-size: 0
+        width: 10px
+        height: 10px
+        border: 1px solid white
+        border-radius: 50%
+        background-color: transparent
+        transition: all ease 0.6s
+    &__slider
+        position: relative
+    &__slider .slick-arrow
+        position: absolute
+        top: 50%
+        z-index: 10
+        font-size: 0
+        width: 41px
+        height: 41px
+        border: 1px solid white
+        border-radius: 50%
+        transition: all ease 0.2s
+        &:hover
+            border: 6px solid white
+    &__slider .slick-prev
+        left: -50px
+        background: url('../img/header/iconmonstr-arrow.svg') center no-repeat
+        transform: rotate(90deg)
+    &__slider .slick-next
+        right: -50px
+        background: url('../img/header/iconmonstr-arrow.svg') center no-repeat
+        transform: rotate(-90deg)
+@media ( max-width:  1200px)
+    .news
+        &__slider .slick-prev
+            left: -20px
+        &__slider .slick-next
+            right: -20px
+@media ( max-width: 768px)
+    .news
+        &__bg
+            padding: 50px 20px
+        &__title
+            padding-bottom: 20px

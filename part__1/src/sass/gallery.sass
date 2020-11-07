@@ -1,0 +1,86 @@
+.gallery 
+    padding: 140px 200px
+    &__container 
+        
+        max-width: 1172px
+        margin: auto
+    &__title 
+        padding-bottom: 100px
+    &__title-line 
+        height: 2px
+        width: 100px
+        background-color: #2C4058
+        margin-bottom: 40px
+        margin: auto
+    &__title-text 
+        font-size: 44px
+        color: #2C4058
+        font-family: Gotham-medium
+        text-align: center
+    &__pictures 
+        display: flex
+        font-size: 0
+        padding-bottom: 60px
+        
+    &__pictures img
+        transition: all ease 0.2s
+        cursor: pointer
+    &__pictures img:hover
+        transform: scale(1.05)
+    &__pictures-left 
+        flex: auto
+        width: 581px
+        padding-right: 10px
+        padding-bottom: 10px
+    &__pictures-left img 
+        width: 100%
+        height: auto
+    &__pictures-small
+        display: flex
+        flex: auto
+        width: 581px
+        font-size: 0
+        flex-wrap: wrap
+        flex-direction: column
+        flex-flow: row wrap
+    &__pictures-small-item
+        flex: auto
+        width: 50%
+        padding-right: 10px
+        padding-bottom: 10px
+    &__pictures-small-item img
+        width: 100%
+        height: 100%
+    &__button-box 
+        text-align: center
+    &__button 
+        color: #2C4058
+        font-size: 14px
+        font-family: Gotham-Book
+        padding: 20px 60px
+        background: transparent
+        border: 1px solid #2C4058
+        transition: all ease 0.4s
+        &:hover
+            background-color: #2C4058
+            color: white
+@media screen and ( max-width: 996px  )
+    .gallery
+        padding: 20px 15px
+@media screen and ( max-width: 768px  )
+    .gallery
+        &__title
+            padding-bottom: 20px
+        &__pictures
+            flex-wrap: wrap
+            flex-direction: column
+            flex-flow: row wrap
+            padding-bottom: 30px
+@media screen and ( max-width: 576px  )
+    .gallery
+        &__pictures-small-item
+            width: 100%
+        &__pictures-left
+            padding-right: 0
+        &__pictures-small-item
+            padding-right: 0

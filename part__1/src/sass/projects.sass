@@ -1,0 +1,184 @@
+.projects
+    &__container
+        padding: 100px 220px
+        text-align: center
+        max-width: 1920px
+        margin: auto
+    &__title
+        padding-bottom: 170px
+    &__title-line
+        height: 2px
+        margin: auto
+        margin-bottom: 40px
+        background-color: #2C4058
+        width: 100px
+    &__title-text
+        font-size: 44px
+        color: #2C4058
+        text-transform: uppercase
+        font-family: Gotham-bold
+    &__card
+        display: flex
+        align-items: center
+        padding-bottom: 210px
+        &:last-child
+            padding-bottom: 140px
+    &__card-picture
+        flex-basis: 50% 
+        position: relative
+        display: flex
+        justify-content: flex-end
+    &__card-picture-img
+        z-index: 200
+        flex-basis: 631px
+        height: 471px
+        background: url('../img/project/project-1.png')
+    &__card-picture-shadow
+        background-color: #55B7FF
+        position: absolute
+        top: -70px
+        width: 631px
+        height: 471px
+    &__card-picture-shadow--left-side
+        left: -220px
+    &__card-picture-shadow--right-side
+        right: -220px
+    &__card-text
+        flex-basis: 50%
+        text-align: left
+        padding: 70px
+    &__card-text-title
+        font-size: 22px
+        color:black
+        padding-bottom: 40px
+        text-transform: uppercase
+        font-family: Gotham-Book
+    &__card-text-title--important
+        color: #2C4058
+        font-weight: 900        
+        display: block
+        font-size: 36px
+        padding-top: 5px
+        font-family: Gotham-bold
+    &__card-text-descr
+        font-size: 18px
+        color: #4B5562
+        padding-bottom: 35px
+        max-width: 460px
+        line-height: 25px
+        font-family: 'Open Sans'
+    &__card-text-button-box
+        padding-bottom: 60px
+    &__card-text-button
+        border: 2px solid #2C4058
+        background: transparent
+        color: #2C4058
+        font-size: 14px
+        padding: 13px 40px
+        text-transform: uppercase
+        transition: all ease 0.2s
+        font-family: Gotham-Book
+        &:hover
+            background-color:  #2C4058
+            color: white
+    &__card-text-adress
+        display: flex
+        font-size: 18px
+        color: #2C4058
+        font-family: 'Open Sans'
+        font-style: italic
+    &__card-text-adress-icon
+        padding-right: 4px
+    &__card--reverse
+        flex-direction: row-reverse 
+    &__card--reverse .projects__card-picture-img
+        background: url('../img/project/project-2.png')    
+@media  ( max-width: 1700px )
+    .projects
+        &__card-picture-img
+            flex-basis: 450px
+        &__card-picture-shadow
+            top: -70px
+            width: 450px
+        &__card-picture-shadow--left-side
+            left: -220px
+        &__card-picture-shadow--right-side
+            right: -220px
+@media  ( max-width: 1300px )
+    .projects
+        &__container
+            padding: 50px 120px
+        &__card-picture-img
+            flex-basis: 350px
+        &__card-picture-shadow
+            top: -70px
+            width: 350px
+        &__card-picture-shadow--left-side
+            left: -120px
+        &__card-picture-shadow--right-side
+            right: -120px    
+@media  ( max-width: 992px )
+    .projects
+        &__container
+            padding: 50px 70px
+        &__title
+            padding-bottom: 90px
+        &__card-picture-img
+            flex-basis: 350px
+        &__card-picture-shadow
+            top: -70px
+            width: 350px
+        &__card-picture-shadow--left-side
+            left: -70px
+        &__card-picture-shadow--right-side
+            right: -70px  
+        &__card-text
+            padding: 30px
+        &__card
+            &:last-child
+                padding-bottom: 50px
+@media  ( max-width: 768px )
+    .projects
+        &__container
+            padding: 50px 70px
+        &__title
+            padding-bottom: 90px
+        &__card-picture
+            flex-basis: 100%
+            justify-content: center
+        &__card-picture-img
+            flex-basis: 350px
+        &__card-picture-shadow
+            top: -70px
+            width: 350px
+        &__card-picture-shadow--left-side
+            left: 0
+        &__card-picture-shadow--right-side
+            right: 0  
+        &__card-text
+            flex-basis: 100%
+        &__card
+            flex-wrap: wrap
+            justify-content: center
+            padding-bottom: 80px
+            &:last-child
+                padding-bottom: 50px
+@media  ( max-width: 576px )
+    .projects
+        &__container
+            padding: 20px 30px
+        &__title
+            padding-bottom: 90px
+        &__card-picture
+            flex-basis: 100%
+            justify-content: center
+        &__card-picture-img
+            // max-width: 100%
+        &__card-picture-shadow
+            display: none
+
+        &__card-text
+        &__card
+            padding-bottom: 80px
+            &:last-child
+                padding-bottom: 50px

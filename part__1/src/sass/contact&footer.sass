@@ -1,0 +1,193 @@
+.map-and-footer-box
+    position: relative
+.map
+    filter: grayscale(100%)
+.footer
+    background: rgb(68,160,210)
+    background: linear-gradient(23deg, rgba(68,160,210,1) 0%, rgba(94,123,210,0.904359243697479) 50%, rgba(99,87,206,0.9839110644257703) 100%)
+    padding: 200px 20px
+    &__container
+        max-width: 772px 
+        margin: auto
+        display: flex
+    &__text
+        flex-basis: 50%
+    &__logo
+        padding-bottom: 42px
+        cursor: pointer
+    &__title
+        font-size: 14px
+        color: #FFFFFF
+        font-family: Gotham-Book
+        display: flex
+        align-items: center
+        justify-content: center
+    &__title-text
+        width: max-content
+    &__title-line
+        margin: 0 10px
+        width: 2px
+        background-color: #FFFFFF
+        height: 21px
+    &__social
+        flex-basis: 50%
+        display: flex
+        justify-content: flex-end
+        align-items: flex-start
+    &__social-item
+        color: white
+        border: 1px solid white
+        border-radius: 50%
+        padding: 15px
+        margin-right: 15px
+        cursor: pointer
+        transition: all ease 0.2s            
+        &:last-child
+            margin-right: 0
+        &:hover
+            border: 5px solid white
+            padding: 11px
+.modal
+    padding: 60px 110px 80px 60px
+    position: absolute
+    top: 30%
+    left: 30%
+    max-width: 771px
+    background-color: white
+    z-index: 1
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%  
+        opacity: .3
+        z-index: -1
+        background-image: url('../img/contact&footer/footer-bg.png')
+        background-repeat: no-repeat
+        background-size: contain
+        background-position:  bottom
+    &__title 
+        padding-bottom: 60px
+    &__title-line 
+        width: 101px
+        height: 2px
+        background-color: #2C4058
+        margin: auto
+        margin-bottom: 30px
+    &__title-text 
+        font-size: 44px
+        color: #2C4058
+        text-transform: uppercase
+        font-family: Gotham-medium
+        text-align: center
+    &__content 
+        display: flex
+    &__contacts 
+        font-family: Gotham-Book
+        font-size: 18px
+        padding-right: 50px
+        color: #2C4058        
+    &__adress 
+        padding-bottom: 35px
+    &__phone 
+        padding-bottom: 35px
+    &__phone a
+        text-decoration: none
+        color: #2C4058 
+    &__email 
+        padding-bottom: 35px
+    &__email a
+        text-decoration: none
+        color: #2C4058 
+    &__form 
+        display: flex
+        flex-direction: column
+        color: #2C4058
+        font-size: 18px
+        font-family: Gotham-Book
+    &__user-name 
+        font-size: 18px
+        background-color: transparent
+        border-bottom: 2px solid rgba(44,64,88,0.2 )
+        border-color:   
+        padding-bottom: 20px
+        transition: all ease 0.6s
+        margin-bottom: 40px
+        &:hover , &:focus
+            border-bottom: 2px solid rgba(44,64,88,1 )
+    &__user-email 
+        font-size: 18px
+        background-color: transparent
+        border-bottom: 2px solid rgba(44,64,88,0.2 )  
+        padding-bottom: 20px
+        transition: all ease 0.6s
+        &:hover , &:focus
+            border-bottom: 2px solid rgba(44,64,88,1 )
+    &__button-box 
+        padding-top: 30px
+        text-align: right
+    &__button 
+        text-transform: uppercase
+        padding: 20px 40px
+        background-color: transparent
+        border: 1px solid #2C4058
+        cursor: pointer
+        transition: all ease 0.6s
+        &:hover
+            background-color: #2C4058
+            color: white
+@media screen and ( max-width: 1270px )
+    .modal
+        left: 25%
+@media screen and ( max-width: 1150px )
+        .modal
+            left: 20%
+@media screen and ( max-width: 980px )
+        .modal
+            left: 15%
+@media screen and ( max-width: 900px )
+        .modal
+            left: 5%
+@media screen and ( max-width: 740px )
+    .footer
+        padding: 40px 15px
+        &__container
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+        &__social
+            justify-content: center
+            order: 1
+            padding-bottom: 50px
+        &__text
+            order: 2
+        &__logo
+            text-align: center
+    .modal
+            padding: 40px 30px 
+            left: 5%
+@media screen and ( max-width: 550px )
+    .footer 
+        padding-top: 440px
+        &__title
+            flex-wrap: wrap
+        &__title-line
+            display: none
+        &__title-text:first-child
+            padding-bottom: 10px       
+    .modal
+        left: 0
+        &__content
+            flex-wrap: wrap
+            justify-content: center
+        &__contacts
+            flex-basis: 100%
+            padding-right: 0
+            padding-bottom: 30px
+        &__form
+            flex-basis: 100%
+        &__button-box
+            text-align: center
+           
